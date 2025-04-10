@@ -5,26 +5,42 @@
     <meta charset="UTF-8">
     <meta name="meeting-minutes" content="HTML">
     <link rel="icon" href="./icons8-favicon-48.png">
+
+    <style>
+      header div {
+        color: purple;
+        font-style: italic;
+      }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      Meeting Minutes for Team ___'s First Meeting
-      <nav>
-        <a href="https://google.com">Google</a>
-        <a href="https://mail.google.com">Gmail</a>
-        <a href="https://amazon.com">Amazon</a>
+      <div>
+        Meeting Minutes for Team ___'s First Meeting
+      </div>
+      <nav style="padding:5px;">
+        <a href="https://google.com" style="color: rgb(173, 216, 230); text-decoration: underline dotted;">Google</a>
+        <a href="https://mail.google.com" style="color: #478294; text-decoration: wavy underline;">Gmail</a>
+        <a href="https://amazon.com" style="color: hsl(177, 100%, 50%); text-decoration: underline;">Amazon</a>
+        <a href="https://leetcode.com/" style="color: color(srgb 1 0 0); text-decoration: underline overline;">Leetcode</a>
       </nav>
     </header>
 
     <main>
       <section>
         <h1>Meeting Minutes 1</h1>
-        <h2>Topic: End User Functionality for Todo-List App</h2>
-        <h3>Attendance list: Bob Michael, David Dune, Sandy Miller, Jacob Warner</h3>
-        <p>Date: April 7, 2025</p>
+        <h2 class="topic">Topic: End User Functionality for Todo-List App</h2>
+        <h3 class="attendance">Attendance list: Bob Michael, David Dune, Sandy Miller, Jacob Warner</h3>
+        <p class="date">Date: April 7, 2025</p>
         <h2>Agenda:</h2>
-        <ol>
+        <ol class="list">
           <li>
             Frontend Framework
             <ul>
@@ -46,22 +62,24 @@
 
       <section>
         <div>
-          <h2>Frontend Framework</h2>
+          <h2 class="frontend-framework merriweather">Frontend Framework</h2>
           <p><strong>Vanilla</strong> <em>HTML/CSS/JS</em> is the <i>simplest</i> to start off with.</p>
           <span>Our team has the most experience with <strong>Vanilla</strong> and <b>React</b>, not so much with Angular</span>
           <p>This is a very very very very very very very very very very <br>very very very very very very long line of text that we want to break up</p>
         </div>
+        <hr>
 
         <div>
-          <h2>Media</h2>
+          <h2 class="media merriweather">Media</h2>
           <img src="figma-tdl.png" alt="figma frontend prototyping" width="500" height="300">
           <br>
           <p>The sample audio and video I got from this GitLab public meeting linked below</p>
-          <a href="https://www.youtube.com/watch?v=qGFoZ8yodc4&ab_channel=GitLabUnfiltered">link</a>
-          <br>
-          <audio controls>
-            <source src="audio_trimmed.m4a" type="audio/mp4">
-          </audio>
+          <div class="link-and-audio">
+            <a href="https://www.youtube.com/watch?v=qGFoZ8yodc4&ab_channel=GitLabUnfiltered">link</a>
+            <audio controls>
+              <source src="audio_trimmed.m4a" type="audio/mp4">
+            </audio>
+          </div>
           <br>
           <video width="500" height="300" controls>
             <source src="video_trimmed.mp4" type="video/mp4">
@@ -75,12 +93,14 @@
           <fieldset>
             <legend>Attendance Form</legend>
 
-            <input type="checkbox" id="came" />
-            <label for="came">I came to this meeting</label>
+            <div style="display:inline-block; align-items: center;">
+              <input type="checkbox" id="came" /><label for="came">I came to this meeting</label>
+            </div>
             <br>
 
-            <input type="radio" id="listened" />
-            <label for="listened">I listened attentively</label>
+            <div style="display:inline-block; align-items: center;">
+              <input type="radio" id="listened" /><label for="listened">I listened attentively</label>
+            </div>
             <br>
 
             <input type="text" placeholder="Comments..."/>
@@ -114,6 +134,30 @@
             <button>Submit!!</button>
           </fieldset>
         </form>
+      </section>
+      <hr>
+
+      <section>
+        <div class="flex-goldies">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+        </div>
+      </section>
+      <hr>
+
+      <section>
+        <div class="grid-goldies">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+          <img src="goldie-1.jpeg" alt="goldie">
+        </div>
       </section>
       <hr>
 
